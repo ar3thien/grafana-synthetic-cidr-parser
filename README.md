@@ -1,4 +1,4 @@
-# grafana-synthetic-cidr-parser
+# Grafana Cloud Synthetic Monitoring CIDR Parser
 
 ## Overview
 
