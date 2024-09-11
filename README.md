@@ -16,4 +16,4 @@ This script is designed to run on an **hourly basis**. Each time it runs, it fet
 
 To obtain the required CIDR range file, refer to the `output_files` folder. You can use the raw version of files directly for your firewall configurations.
 For example:
-> https://raw.githubusercontent.com/ar3thien/grafana-synthetic-cidr-parser/main/output_files/all_ipv4.txt
+https://raw.githubusercontent.com/ar3thien/grafana-synthetic-cidr-parser/main/output_files/all_ipv4.txt
