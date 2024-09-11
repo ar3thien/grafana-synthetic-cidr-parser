@@ -1,5 +1,6 @@
 import requests
 import json
+from datetime import datetime
 
 # URL of the JSON data
 url = "https://allowlists.grafana.com/synthetics"
@@ -29,12 +30,19 @@ def main():
         # Extract IPv4 sections
         ipv4_sections = data['all']['ipv4']
         
-        # Write IPv4 sections to a file
+        # Get the current datetime
+        last_modified = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        
+        # Write current datetime and IPv4 sections to a file
         with open(output_file, 'w') as file:
+            # Write the current datetime as a comment
+            file.write(f"# Last-Update: {last_modified}\n")
+            
+            # Write each IPv4 section on a new line
             for section in ipv4_sections:
                 file.write(section + '\n')
         
-        print(f"IPv4 sections have been written to {output_file}.")
+        print(f"IPv4 sections and current Last-Modified header have been written to {output_file}.")
     else:
         print(f"Failed to fetch data. HTTP Status code: {response.status_code}")
 
