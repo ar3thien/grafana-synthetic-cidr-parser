@@ -28,7 +28,7 @@ def save_plaintext_to_file(file_path, value):
     # Write the current datetime and formatted value to a file
     with open(file_path, 'w') as file:
         # Write the current datetime as a comment
-        file.write(f"# Last-Modified: {last_modified}\n\n")
+        file.write(f"# Last-Update: {last_modified}\n\n")
 
         # Format the value as plain text and write to the file
         formatted_value = format_value(value)
