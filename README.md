@@ -1,3 +1,5 @@
+![workflow](https://github.com/ar3thien/grafana-synthetic-cidr-parser/actions/workflows/main.yml/badge.svg)
+
 # Grafana Cloud Synthetic Monitoring CIDR Parser
 
 ## Overview
